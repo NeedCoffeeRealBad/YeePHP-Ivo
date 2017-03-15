@@ -1,0 +1,125 @@
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-default {
+  background-color: #0b0b0b;
+  padding: 30px;
+  border: none; }
+
+.navbar-default ul {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  list-style: outside none none; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: orangered; }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: darksalmon; }
+
+.navbar-default .navbar-brand {
+  color: plum; }
+
+.carousel {
+  padding: 10px; }
+
+.nestest {
+  height: 300px !important;
+  width: 100% !important; }
+
+.platforms h3 {
+  background-color: orangered;
+  color: white;
+  padding: 5px; }
+
+.platforms ul {
+  list-style: none; }
+
+.platforms li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black; }
+
+.platforms li {
+  padding: 10px; }
+
+.platforms li span {
+  font-size: 25px;
+  margin-right: 50px; }
+
+.reviews {
+  background-color: #0b0b0b; }
+
+.single-review h4, h2 {
+  color: whitesmoke; }
+
+.single-review p {
+  color: lightsalmon; }
+
+.color {
+  background-color: #0a6aa1; }
+
+@media (min-width: 768px) {
+  .navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; } }
+.gamesContainer {
+  background-color: rgba(46, 46, 46, 0.96); }
+
+.gamesContainer h1, h2, h3, p {
+  color: white; }
+
+.gamesContainer {
+  padding: 50px; }
+
+.morecontent span {
+  display: none; }
+
+.morelink {
+  display: block; }
+
+.singleGameContainer {
+  height: 300px; }
+
+.pusturva {
+  background-color: lightsalmon; }
+
+.platform p {
+  padding-left: 25px; }
+
+.datePublished {
+  padding-top: 25px; }
+
+.pageNumber {
+  color: orangered;
+  font-weight: 400; }
+
+.platformBg {
+  background-color: rgba(46, 46, 46, 0.96); }
+
+.platformBg h4, span {
+  color: white; }
+
+.dropdown-menu {
+  padding: 0; }
+
+.singleGamePanel {
+  background-color: #3c3c3c; }
+
+.review a {
+  text-decoration: none;
+  color: white; }
+
+.videosDetailPanel, .videosDetailPanel h4 {
+  color: #1298ff;
+  background-color: black; }
+
+.homeVideoTitle {
+  color: whitesmoke; }
+
+.carousel {
+  padding: 0 !important; }
+
+/*# sourceMappingURL=custom.css.map */

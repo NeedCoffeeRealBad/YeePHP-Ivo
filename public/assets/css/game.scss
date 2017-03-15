@@ -1,0 +1,110 @@
+.game_panel a {
+  text-decoration: none;
+  color: #ffcc71;
+}
+
+.game_panel a:hover {
+  color: white;
+}
+
+
+.nav-tabs{
+  background-color: black;
+  padding:10px;
+  padding-bottom:0;
+  border:none;
+}
+.nav-tabs>li>a{
+  background-color: #FF6600;
+  color:white;
+  font-weight:600;
+  text-align: center;
+}
+
+
+.game_cont_box{
+  min-height: 700px;
+}
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 5px; /* firefox bug fix */
+  width: auto;
+}
+
+.horizontal {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px dotted white;
+}
+
+.horizontal2 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted white;
+}
+
+
+
+
+
+.image_holder {
+  padding: 10px;
+}
+
+.image_background {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.paragraph_background {
+  padding: 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+  letter-spacing: 1pt;
+  word-spacing: 2pt;
+  text-align: left;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 1;
+}
+
+.carousel_background {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+
+.carousel-control.right, .carousel-control.left {
+  padding-top: 150px;
+  font-size: 20px;
+  width: 30px;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+  background-color: rgba(0, 172, 237, 0.49);
+}
+
+.videos_container {
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.platform_background {
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.game_platform_background {
+  color: white;
+}
+#score{
+  font-size: 32px;
+
+}
+
+.star{
+  color:red;
+  font-size:50px;
+}
