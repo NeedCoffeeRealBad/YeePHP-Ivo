@@ -14,6 +14,10 @@ class HomeController extends \Yee\Managers\Controller\Controller
     public function index()
     {
         $app = $this->getYee();
-        $app->render('HomeFolder/home.twig');
+        $app->render('home/home.twig', $data = array(
+            
+        ));
     }
+
+
 }

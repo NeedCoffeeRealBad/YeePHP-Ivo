@@ -20,6 +20,19 @@ $config = require __DIR__ . '/../config.php';
 $app = new \Yee\Yee($config);
 $app->view(new \Yee\Views\Twig());
 
+//set Cookies
+$app->add(new \Yee\Middleware\SessionCookie(array(
+'expires' => '20 minutes',
+'path' => '/',
+'domain' => null,
+'secure' => false,
+'httponly' => true,
+'name' => 'yee_session',
+'secret' => 'CHANGE_ME',
+'cipher' => MCRYPT_RIJNDAEL_256,
+'cipher_mode' => MCRYPT_MODE_CBC
+)));
+
 new Yee\Managers\RoutingCacheManager(
     array(
         'cache' => __DIR__ . '/../cache/routing',
@@ -28,4 +41,8 @@ new Yee\Managers\RoutingCacheManager(
 );
 new Yee\Managers\DatabaseManager();
 // Run app
+
+$twig = $app->view()->getEnvironment();
+$twig->addGlobal( 'session', $_SESSION );
+
 $app->execute();

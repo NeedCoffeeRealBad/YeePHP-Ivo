@@ -16,10 +16,15 @@
                    'database' => array(
                 'db1' => array(
                                 'database.host' => 'localhost',
-                                'database.name' => 'tourist_agency',
+                                'database.name' => 'yeeivo',
                                 'database.user' => 'root',
                                 'database.pass' => '',
                                 'database.port' => 3306
                                 )
-                            )
+                            ),
+                   'validation' => array(
+                                'pattern_validate_date_format' => '/^(?=[a-z]{2})(?=.{4,26})(?=[^.]*\.?[^.]*$)(?=[^_]*_?[^_]*$)[\w.]+$/iD'
+
+
+                    )
                 );

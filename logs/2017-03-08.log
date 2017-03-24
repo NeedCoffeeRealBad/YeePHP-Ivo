@@ -1,0 +1,23 @@
+ERROR - 2017-03-08 13:07:43 - exception 'Twig_Error_Loader' with message 'Unable to find template "add_destnation/add_destnation.twig" (looked into: C:\wamp64\www\tourist-agency\tourist-agency/templates).' in C:\wamp64\www\tourist-agency\tourist-agency\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:232
+Stack trace:
+#0 C:\wamp64\www\tourist-agency\tourist-agency\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(150): Twig_Loader_Filesystem->findTemplate('add_destnation/...')
+#1 C:\wamp64\www\tourist-agency\tourist-agency\vendor\twig\twig\lib\Twig\Environment.php(329): Twig_Loader_Filesystem->getCacheKey('add_destnation/...')
+#2 C:\wamp64\www\tourist-agency\tourist-agency\vendor\twig\twig\lib\Twig\Environment.php(419): Twig_Environment->getTemplateClass('add_destnation/...')
+#3 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('add_destnation/...')
+#4 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\View.php(255): Yee\Views\Twig->render('add_destnation/...', NULL)
+#5 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\View.php(243): Yee\View->fetch('add_destnation/...', NULL)
+#6 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Yee.php(764): Yee\View->display('add_destnation/...')
+#7 C:\wamp64\www\tourist-agency\tourist-agency\App\Controllers\AddDestinationController.php(19): Yee\Yee->render('add_destnation/...', Array)
+#8 [internal function]: AddDestinationController->index()
+#9 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#10 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___index', Array)
+#11 [internal function]: AddDestinationController::___index()
+#12 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('AddDestinationC...', Array)
+#13 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#14 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\SessionCookie.php(110): Yee\Middleware\MethodOverride->call()
+#17 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\SessionCookie->call()
+#18 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#19 C:\wamp64\www\tourist-agency\tourist-agency\public\index.php(48): Yee\Yee->execute()
+#20 {main}
