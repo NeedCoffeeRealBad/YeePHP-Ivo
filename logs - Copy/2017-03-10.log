@@ -1,0 +1,17 @@
+ERROR - 2017-03-10 13:33:31 - exception 'ErrorException' with message 'Undefined variable: name' in C:\wamp64\www\tourist-agency\tourist-agency\App\Models\AddDestinationModel.php:15
+Stack trace:
+#0 C:\wamp64\www\tourist-agency\tourist-agency\App\Models\AddDestinationModel.php(15): Yee\Yee::handleErrors(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 15, Array)
+#1 C:\wamp64\www\tourist-agency\tourist-agency\App\Controllers\AddDestinationController.php(36): App\Models\AddDestinationModel->__construct('', '', '', '', '')
+#2 [internal function]: AddDestinationController->post()
+#3 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___post', Array)
+#5 [internal function]: AddDestinationController::___post()
+#6 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('AddDestinationC...', Array)
+#7 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\SessionCookie.php(110): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\SessionCookie->call()
+#12 C:\wamp64\www\tourist-agency\tourist-agency\vendor\yeephp\yeephp\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#13 C:\wamp64\www\tourist-agency\tourist-agency\public\index.php(48): Yee\Yee->execute()
+#14 {main}
