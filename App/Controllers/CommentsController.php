@@ -22,4 +22,26 @@ class CommentsController extends \Yee\Managers\Controller\Controller
         );
         $app->render('dashboard/dashboard.twig', $data);
     }
+
+    /**
+     * @Route('/dashboard')
+     * @Name('dashboard.post')
+     * @Method('POST')
+     */
+    public function post()
+    {
+        $app = $this->getYee();
+
+        $name = $app->request->post('name');
+        $comment = $app->request->post('comment');
+
+        //add to database
+
+        $data = array(
+            'name' => $name,
+            'comment' => $comment
+        );
+
+        echo json_encode($data);
+    }
 }
