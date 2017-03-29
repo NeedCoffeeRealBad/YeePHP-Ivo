@@ -39,7 +39,7 @@ class RegisterController extends \Yee\Managers\Controller\Controller
         if($registerModel->register() == true)
         {
             $registerModel->insertInDb();
-            $app->render('home/home.twig', $data = array());
+            $app->render('login/login.twig', $data = array());
         }
         else
         {
